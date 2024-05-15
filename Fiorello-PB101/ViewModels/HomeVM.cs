@@ -6,5 +6,7 @@ namespace Fiorello_PB101.ViewModels
     {
         public IEnumerable<Slider> Sliders { get; set; }
         public SliderInfo SliderInfo { get; set; }
+
+        public IEnumerable<Blog> Blogs { get; set; }
     }
 }

@@ -4,6 +4,7 @@ using Fiorello_PB101.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Fiorello_PB101.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240515022840_CreatedBlogTable")]
+    partial class CreatedBlogTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +55,7 @@ namespace Fiorello_PB101.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 5, 15, 6, 56, 35, 108, DateTimeKind.Local).AddTicks(2652),
+                            CreatedDate = new DateTime(2024, 5, 15, 6, 28, 40, 125, DateTimeKind.Local).AddTicks(8130),
                             Description = "Reshadin blogu",
                             Image = "blog-feature-img-1.jpg",
                             SofDeleted = false,
@@ -62,18 +64,18 @@ namespace Fiorello_PB101.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 5, 15, 6, 56, 35, 108, DateTimeKind.Local).AddTicks(2658),
+                            CreatedDate = new DateTime(2024, 5, 15, 6, 28, 40, 125, DateTimeKind.Local).AddTicks(8151),
                             Description = "Ilqarin blogu",
-                            Image = "blog-feature-img-3.jpg",
+                            Image = "blog-feature-img-2.jpg",
                             SofDeleted = false,
                             Title = "Title2"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 5, 15, 6, 56, 35, 108, DateTimeKind.Local).AddTicks(2662),
+                            CreatedDate = new DateTime(2024, 5, 15, 6, 28, 40, 125, DateTimeKind.Local).AddTicks(8156),
                             Description = "Hacixanin blogu",
-                            Image = "blog-feature-img-4.jpg",
+                            Image = "blog-feature-img-3.jpg",
                             SofDeleted = false,
                             Title = "Title3"
                         });

@@ -13,6 +13,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
 
 builder.Services.AddScoped<ISliderService,SliderService>();
+builder.Services.AddScoped<IBlogService,BlogService>();
 
 var app = builder.Build();
 

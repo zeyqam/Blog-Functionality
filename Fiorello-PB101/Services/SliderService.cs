@@ -14,7 +14,7 @@ namespace Fiorello_PB101.Services
         }
         public async Task<IEnumerable<Slider>> GetAllAsync()
         {
-            return await _context.Sliders.Where(m => !m.SofDeleted).ToListAsync();
+            return await _context.Sliders.ToListAsync();
         }
 
         public async Task<SliderInfo> GetSliderInfoAsync()
